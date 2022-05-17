@@ -17,9 +17,9 @@ function Container() {
             <Router>
 
                 <Routes>
-                    <Route path='/home' exact element={<Home />} />
-                    <Route path="/home/barchart" element={<BarChart />} />
-                    <Route path="/home/*" element={<NotFound />} />
+                    <Route path='/formValidation_barChart' exact element={<Home />} />
+                    <Route path="/formValidation_barChart/barchart" element={<BarChart />} />
+                    <Route path="/formValidation_barChart/*" element={<NotFound />} />
                 </Routes>
 
             </Router>
