@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  @mixin flexprop {
+  display: flex;
+  align-items: center;
+  }
+
+  .container{
+    @include flexprop;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+
+    &__main-div{
+      display: flex;
+     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      
+      &__left{
+        @include flexprop;
+        width: 50%;
+        justify-content: center;
+        background: url("./bg.png");
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+
+        &__text{
+          margin-top: 40%;
+          text-align: center;
+          width: 50%;
+          font-size: 0.8rem;
+        }
+      }
+
+      &__right{
+        width: 50%;
+       padding: 40px;
+
+       &__form{
+         font-size: 0.8rem;
+         label{
+          line-height: 1.5rem;
+        }
+
+        &__input{
+          width: 100%;
+          padding: 5px;
+        }
+        &__errorMsg{
+          height: 20px;
+          font-size: 0.6rem;
+          color: red;
+        }
+        .submit--btn{
+        background-color: rgb(69, 189, 210);
+        border: none;
+        color: white;
+        }
+       }
+      }
+    }
+  }
+
+
+
+  .chart{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+
+@media (max-width: 576px) { 
+  .container__main-div__left{
+    display: none;
+  }
+  .container__main-div__right{
+    width: 100%;
+  }
+ }
+
+/* Responsive css code  */
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* // X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) { ... } */
