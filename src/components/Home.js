@@ -20,7 +20,7 @@ const Home = () => {
         console.log(inputs);
         setErrors(validate(inputs));
         setIsSubmit(true);
-        navigate("/home/barchart");
+        navigate("/formValidation_barChart/barchart");
     }
 
     useEffect(() => {
