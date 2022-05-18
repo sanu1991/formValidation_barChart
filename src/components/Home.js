@@ -20,13 +20,14 @@ const Home = () => {
         console.log(inputs);
         setErrors(validate(inputs));
         setIsSubmit(true);
-        navigate("/formValidation_barChart/barchart");
+        // navigate("/formValidation_barChart/barchart");
     }
 
     useEffect(() => {
         console.log(errors);
         if (Object.keys(errors).length === 0 && isSubmit) {
             console.log(inputs);
+            navigate("/formValidation_barChart/barchart");
         }
     }, [errors])
 
